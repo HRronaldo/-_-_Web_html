@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>009</title>
+    <style>
+        /* “*”通配适用符 */
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: gold;
+            padding: 50px;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background: gray;
+            padding: 20px 50px;
+            /* 上下20左右50 */
+            /* padding: 20px 50px; */
+            /* 上下左右50 */
+            /* padding: 50px; */
+            /* 上20左右30下50 */
+            /* padding: 20px 30px 50px; */
+            /* 上20右30下40左50 */
+            /* padding: 20px 30px 40px 50px; */
+            border: 10px solid red;
+            border-top: 10px dashed yellow;
+        }    
+        .box4{
+            width: 100px;
+            height: 100px;
+            background: purple;
+            padding: 50px;
+            border: 10px solid pink;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- W3C盒子的标准模型 -->
+    <div class="box1">111</div>
+    <div class="box2">111</div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+</body>
+</html>

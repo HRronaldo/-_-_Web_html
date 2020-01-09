@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点名器</title>
+    <style>
+        *{margin:0px;padding:0px;}
+        #all{
+            width:500px;
+            height:300px;
+            border:solid 1px blue;
+            position:fixed;
+            left:50%;
+            top:50%;
+            margin-left:-250px;
+            margin-top:-150px;
+            border-radius:10px;
+            background:#CC99CC;
+        }
+        #names{
+            width:350px;
+            height:180px;
+            border:solid 1px green;
+            margin:30px auto;
+            border-radius:10px;
+            background:#FFCCCC;
+            font-size:60px;
+            line-height:180px;
+            text-align:center;
+        }
+        #start{
+            width:80px;
+            height:30px;
+            margin-left:100px;
+            font-size:17px;
+            cursor:pointer;
+        }
+        #stops{
+            width:80px;
+            height:30px;
+            margin-left:140px;
+            font-size:17px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id='all'>
+        <div id='names'></div>
+        <button id='start'>开始</button>
+        <button id='stops'>停止</button>
+    </div>
+    <script>
+        var starts = document.getElementById('start');
+        var stops = document.getElementById('stops');
+        var names = document.getElementById('names');
+        var into;
+        starts.onclick = function(){
+            if(into != null) return;
+            //定时器
+            into = setInterval(function(){
+            //名字
+            var ns = ['张三','李四','潘金莲','武大郎','武松','西门庆','宋江','公孙胜','宋清','杨志','方腊','林冲','鲁智深','镇关西','史进','吴用','燕青','戴宗'];
+            names.innerHTML = ns[rand(0,ns.length-1)];
+            },50)
+        }
+        stops.onclick = function(){
+            clearInterval(into);
+            into = null;
+        }
+        //随机数
+        function rand(m,n){
+            return Math.ceil(Math.random()*(n-m+1))+(m-1);
+        }
+    </script>
+</body>
+</html>a

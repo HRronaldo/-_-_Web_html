@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>016-2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: green;
+            position: relative;
+            /* position: relative; 相对定位 相对于盒子自身来定位 */
+            top: 100px;
+            left: 20px;
+            z-index: 2;
+            /* 层级关系 */
+        }
+        .box2{
+            width: 300px;
+            height: 2000px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 定位 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
