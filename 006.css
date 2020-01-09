@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 表单样式 */
+.tab1{
+    margin: 100px auto;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+.tab1 tr td{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-top: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+}
+
+.bg1{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: url(../images/033.png) no-repeat center center #84cbc5;
+    border: 4px solid rgba(215, 86, 68, 0.5);
+    border-radius: 50%;
+}
+.news ul li{
+    width: 220px;
+    height: 340px;
+    border: 1px solid #dedede;
+}
+.news ul li img{
+    width: 220px;
+    display: block;
+}
+.news ul li h2{
+    height: 30px;
+    background-color: #00aca8;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 30px;
+}

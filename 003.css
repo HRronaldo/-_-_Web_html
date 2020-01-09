@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.page{
+    background: #f6f6f6;
+    height: 46px;
+    padding: 20px;  
+}
+.page ul li{
+    float: left;    
+}
+.page ul li a{
+    /* width: 48px;*/
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    padding: 0 18px;
+    color: #919191;
+    background: #ffffff;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    text-decoration: none;
+}
+.page ul li a:hover{
+    color: #ffffff;
+    background: #ff464e;
+}
+.page ul li a.visited{
+    color: #ffffff;
+    background: #ff464e;
+}
+.clear{
+    clear: both;
+}
+.page ul li:first-child a{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.page ul li:nth-child(9) a{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
